@@ -14,7 +14,8 @@
   margin-left: -400px; /* Negative half of width. */
 }
 
-.body p{
+.body p,
+.body a{
   margin: 0;
   font-size: 36px;
   font-family: Helvetica;
@@ -25,8 +26,28 @@
   margin-top: 16px;
 }
 
+p{
+  z-index: 0;
+}
+
 a{
   text-decoration: none;
   color: #FD4797;
   z-index: 1000;
+  position: relative;
+  border-radius: 10px;
+  background-color: white;
+  transition: 300ms box-shadow;
+}
+
+a:hover{
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+canvas{
+  top: -210;
+  left: -400;
+  z-index: 100;
+  width: 200%;
+  height: 200%;
 }
