@@ -4,6 +4,7 @@
 }
 
 .body{
+  z-index: 100;
   position: fixed;
   width: 800px;
   height: 400px;
@@ -27,4 +28,5 @@
 a{
   text-decoration: none;
   color: #FD4797;
+  z-index: 1000;
 }
