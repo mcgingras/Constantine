@@ -1,0 +1,30 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.body{
+  position: fixed;
+  width: 800px;
+  height: 400px;
+  top: 50%;
+  left: 50%;
+  margin-top: -200px; /* Negative half of height. */
+  margin-left: -400px; /* Negative half of width. */
+}
+
+.body p{
+  margin: 0;
+  font-size: 36px;
+  font-family: Helvetica;
+  line-height: 42px;
+}
+
+.body p+p{
+  margin-top: 16px;
+}
+
+a{
+  text-decoration: none;
+  color: #FD4797;
+}

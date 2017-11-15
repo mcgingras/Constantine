@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <title>Constantine</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.typeit/4.4.0/typeit.min.js"></script>
+  </head>
+  <body>
+
+    <img src="card.png" alt="" style="display: none;" class="sol">
+
+    <div class="body">
+      <p class="glitch"></p>
+      <p>My name is Constantine. I am a <strike>cool guy</strike> freelance design lead based in San Francisco. I’m currently working with <a href="">IDEO CoLab</a> and running <a href="">Hey Vous.</a></p>
+      <p>Here are a few <a href="">projects</a> I’ve worked on. Say <a href="">hello</a>.</p>
+      <p>Click anywhere and contemplate life.</p>
+    </div>
+
+    <script>
+    $('.glitch').typeIt({
+     strings: ["Hello", "Welcome", "Hey "],
+     speed: 100,
+     breakLines: false,
+     autoStart: false
+    });
+    </script>
+
+    <script src="sol.js"></script>
+  </body>
+</html>
