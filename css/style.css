@@ -62,6 +62,8 @@ canvas{
   height: 100%;
 }
 
+.hidden-desktop{ display: none; }
+.hidden-mobile { display: block; }
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  ~~~~~~~~~~~~~~~~~~~ mobile ~~~~~~~~~~~~~~~~~~~~~~
@@ -71,18 +73,24 @@ canvas{
 and (min-device-width : 375px)
 and (max-device-width : 667px) {
 
+  p{
+    width: 90%;
+  }
+
   .body p,
   .body a{
-    font-size: 42px;
-    line-height: 84px;
+    font-size: 72px;
+    line-height: 100px;
   }
 
   .body p+p{
-    margin-top: 100px;
+    margin-top: 250px;
   }
 
-  p:first-child{
-    margin-top: 50px;
-  }
+  p:first-child{ margin-top: 150px; }
+  .last-child { margin-bottom: 150px; }
+
+  .hidden-desktop{ display: block; }
+  .hidden-mobile { display: none; }
 
 }

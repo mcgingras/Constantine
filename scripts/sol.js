@@ -1,9 +1,13 @@
 var here = document.getElementById('here');
 var canvas = document.createElement( 'canvas' );
 canvas.style.position = 'absolute';
+// anyway to change this to height of div?
+// same with width
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 here.appendChild( canvas );
+
+var mobile_active = document.getElementById('js-mobile-on');
 
 var context = canvas.getContext( '2d' );
 
