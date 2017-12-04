@@ -82,7 +82,7 @@ and (max-device-width : 667px) {
   }
 
   p:first-child{
-    margin-top: 100px;
+    margin-top: 50px;
   }
 
 }
