@@ -65,6 +65,7 @@ canvas{
 .hidden-desktop{ display: none; }
 .hidden-mobile { display: block; }
 
+
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  ~~~~~~~~~~~~~~~~~~~ mobile ~~~~~~~~~~~~~~~~~~~~~~
  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
@@ -73,14 +74,16 @@ canvas{
 and (min-device-width : 375px)
 and (max-device-width : 667px) {
 
-  p{
-    width: 90%;
-  }
-
   .body p,
   .body a{
-    font-size: 72px;
-    line-height: 100px;
+    margin: 0;
+    font-size: 90px;
+    line-height: 120px;
+  }
+
+  .body p{
+    margin-left: 5%;
+    width: 80%;
   }
 
   .body p+p{
@@ -88,7 +91,7 @@ and (max-device-width : 667px) {
   }
 
   p:first-child{ margin-top: 150px; }
-  .last-child { margin-bottom: 150px; }
+  .body .last-child { margin-bottom: 150px; }
 
   .hidden-desktop{ display: block; }
   .hidden-mobile { display: none; }
