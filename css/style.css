@@ -71,9 +71,10 @@ canvas{
 and (min-device-width : 375px)
 and (max-device-width : 667px) {
 
-  p{
-    font-size: 3em !important;
-    line-height: 1.5em !important;
+  .body p,
+  .body a{
+    font-size: 42px;
+    line-height: 84px;
   }
 
   .body p+p{
@@ -81,7 +82,7 @@ and (max-device-width : 667px) {
   }
 
   p:first-child{
-    margin-top: 150px;
+    margin-top: 100px;
   }
 
 }
