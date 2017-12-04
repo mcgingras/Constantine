@@ -84,8 +84,10 @@ and (max-device-width : 667px) {
     margin-top: 200px;
   }
 
-  body{
-    background-color: red;
+  img{
+    width: 200%;
+    height: 200%;
   }
+
 
 }
