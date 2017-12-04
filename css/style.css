@@ -84,4 +84,8 @@ and (max-device-width : 667px) {
     margin-top: 200px;
   }
 
+  body{
+    background-color: red;
+  }
+
 }
