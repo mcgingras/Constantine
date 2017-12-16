@@ -2,6 +2,11 @@
  ~~~~~~~~~~~~~~~~~~~ Desktop ~~~~~~~~~~~~~~~~~~~~~~
  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
+ @font-face {
+ font-family: "Atlas";
+ src: url("./AtlasGrotesk-Regular.ttf") format("truetype");
+}
+
 *{
   margin: 0;
   padding: 0;
@@ -15,8 +20,8 @@
 .body a{
   margin: 0 auto;
   font-size: 30px;
-  font-family: Helvetica;
-  line-height: 42px;
+  font-family: Atlas;
+  line-height: 40px;
 }
 
 .body p+p{
@@ -24,14 +29,14 @@
 }
 
 p:first-child{
-  margin-top: 150px;
+  margin-top: 120px;
 }
 
 p{
   margin-left: 400px;
   display: block;
   z-index: 0;
-  width: 800px;
+  width: 600px;
   margin: 0 auto;
 }
 
@@ -62,8 +67,8 @@ canvas{
   height: 100%;
 }
 
-.hidden-desktop{ display: none; }
-.hidden-mobile { display: block; }
+.hidden--desktop{ display: none; }
+.hidden--mobile { display: inline; }
 
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -93,7 +98,7 @@ and (max-device-width : 667px) {
   p:first-child{ margin-top: 150px; }
   .body .last-child { margin-bottom: 150px; }
 
-  .hidden-desktop{ display: block; }
-  .hidden-mobile { display: none; }
+  .hidden--desktop{ display: inline; }
+  .hidden--mobile { display: none; }
 
 }
