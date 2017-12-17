@@ -3,8 +3,8 @@ var canvas = document.createElement( 'canvas' );
 canvas.style.position = 'absolute';
 // anyway to change this to height of div?
 // same with width
-canvas.width = window.innerWidth;
-canvas.height = window.innerHeight;
+canvas.width = here.clientWidth;
+canvas.height = here.clientHeight;
 here.appendChild( canvas );
 
 var mobile_active = document.getElementById('js-mobile-on');
@@ -83,18 +83,24 @@ function onMouseMove( event ) {
 }
 
 document.addEventListener( 'touchstart', function ( event ) {
-	event.preventDefault();
-	for ( var i = 0; i < event.changedTouches.length; i ++ ) {
-		throwCard( event.changedTouches[ 0 ].pageX, event.changedTouches[ 0 ].pageY );
-	}
+	// for ( var i = 0; i < event.changedTouches.length; i ++ ) {
+	// 	throwCard( event.changedTouches[ 0 ].pageX, event.changedTouches[ 0 ].pageY );
+	// }
 }, false );
 
 document.addEventListener( 'touchmove', function ( event ) {
+	// for ( var i = 0; i < event.touches.length; i ++ ) {
+	// 	throwCard( event.touches[ i ].pageX, event.touches[ i ].pageY );
+	// }
+}, false );
+
+document.getElementById('js-mobile-on').addEventListener("click", function ( event ){
 	event.preventDefault();
-	for ( var i = 0; i < event.touches.length; i ++ ) {
+	for ( var i = 0; i < 50; i ++ ) {
 		throwCard( event.touches[ i ].pageX, event.touches[ i ].pageY );
 	}
-}, false );
+
+});
 
 setInterval( function () {
 	var i = 0, l = particles.length;
