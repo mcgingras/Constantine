@@ -13,11 +13,14 @@
 }
 
 body{
+  display: flex;
   font-size: 100%;
 }
 
 .body{
+  display: block;
   z-index: 100;
+  width:100%;
 }
 
 .body p,
