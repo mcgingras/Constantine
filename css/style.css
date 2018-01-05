@@ -47,7 +47,7 @@ p{
   margin: 0 auto;
 }
 
-a{
+a, .link{
   text-decoration: none;
   color: #FD4797;
   z-index: 1000;

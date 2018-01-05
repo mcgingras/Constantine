@@ -7,8 +7,6 @@ canvas.width = here.clientWidth;
 canvas.height = here.clientHeight;
 here.appendChild( canvas );
 
-var mobile_active = document.getElementById('js-mobile-on');
-
 var context = canvas.getContext( '2d' );
 
 var id = 52;
@@ -83,23 +81,18 @@ function onMouseMove( event ) {
 }
 
 document.addEventListener( 'touchstart', function ( event ) {
-	// for ( var i = 0; i < event.changedTouches.length; i ++ ) {
-	// 	throwCard( event.changedTouches[ 0 ].pageX, event.changedTouches[ 0 ].pageY );
-	// }
 }, false );
 
 document.addEventListener( 'touchmove', function ( event ) {
-	// for ( var i = 0; i < event.touches.length; i ++ ) {
-	// 	throwCard( event.touches[ i ].pageX, event.touches[ i ].pageY );
-	// }
 }, false );
 
 document.getElementById('js-mobile-on').addEventListener("click", function ( event ){
 	event.preventDefault();
+	console.log(event);
+	console.log(event.touches);
 	for ( var i = 0; i < 50; i ++ ) {
-		throwCard( event.touches[ i ].pageX, event.touches[ i ].pageY );
+		throwCard( 500, 500);
 	}
-
 });
 
 setInterval( function () {
